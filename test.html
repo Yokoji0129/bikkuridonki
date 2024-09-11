@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スライドショーアニメーション</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: center;
+            margin: 0 300px;
+        }
+
+        .fade {
+            margin: 0 30px;
+        }
+
+        .fade img {
+            width: 400px;
+            height: 500px;
+        }
+
+        .fade .content {
+            width: 100%;
+            text-align: left;
+        }
+
+        .fade h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .fade p {
+            margin: 0;
+            padding: 0;
+            width: 400px;
+            line-height: 30px;
+        }
+
+        .fade.store1 {
+            opacity: 0;
+            transform: translateX(-300px);
+            transition: opacity 1.5s, transform 1.5s;
+        }
+
+        .fade.store2 {
+            opacity: 0;
+            transform: translateY(0px);
+            transition: opacity 3s, transform 3s;
+        }
+
+        .fade.store3 {
+            opacity: 0;
+            transform: translateX(300px);
+            transition: opacity 1.5s, transform 1.5s;
+        }
+
+        .fade.active {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        @media screen and (max-width: 1300px) {
+            .fade img {
+                height: 400px;
+                width: 300px;
+            }
+
+            .fade p {
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {}
+
+        @media screen and (max-width: 1024px) {
+            .box {
+                flex-direction: column;
+                margin: 0 100px;
+            }
+
+            .fade img {
+                width: 100%;
+            }
+
+            .fade {
+                margin: 10px 0;
+                display: flex;
+            }
+            .fade h2{
+                padding: 0 10px;
+            }
+
+            .fade p {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="fade store1">
+            <img src="./img/store/store1.jpg" alt="">
+            <div class="content">
+                <h2>びっくりドンキー今福鶴見店</h2>
+                <p>大阪府大阪市にあるこちらのお店は、大きな2本の煙突がシンボル🏭
+                    無骨なパイプや錆びたブリキは、昔の工場のような雰囲気を表現しています🔧<br>
+                    インダストリアルな内装の中には床に鯉の絵が𓆝
+                    お近くの方はぜひお立ち寄りください✨</p>
+            </div>
+        </div>
+
+        <div class="fade store2">
+            <img src="./img/store/store2.jpg" alt="">
+            <div class="content">
+                <h2>びっくりドンキー上新庄店</h2>
+                <p>大阪市東淀川区の上新庄店は「廃墟化したジャンク・ヤード」がコンセプト✨ブリキを使ったレトロな外観が、独特な雰囲気を醸し出しています😊<br>
+                    店内には、乗り物の車内のようなお席も🛺🚙🚗
+                    ぜひお店の装飾も楽しんでみてください♪</p>
+            </div>
+        </div>
+
+        <div class="fade store3">
+            <img src="./img/store/store3.jpg" alt="">
+            <div class="content">
+                <h2>びっくりドンキーアメリカ村店</h2>
+                <p>大阪の人気スポット"アメリカ村"にも店舗があるんです😊<br>
+                    1970～80年代のアメリカンテイストなディスプレイが店内をにぎやかに彩ります♪
+                    入り口のトラクターも必見です🚙👀</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const targets = document.getElementsByClassName('fade');
+        for (let i = targets.length; i--;) {
+            //オブザーバーで監視
+            let observer = new IntersectionObserver((entries, observer) => {
+                for (let j = entries.length; j--;) {
+                    if (entries[j].isIntersecting) {
+                        entries[j].target.classList.add('active');
+                    } else {
+                        entries[j].target.classList.remove('active');
+                    }
+                }
+            });
+            observer.observe(targets[i]);
+        }
+    </script>
+</body>
+
+</html>

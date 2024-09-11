@@ -1,0 +1,37 @@
+footer {
+    position: relative;
+    /* 画像の位置基準となる相対的な位置を設定する */
+    background-color: rgb(96, 53, 44);
+    height: 200px;
+}
+
+footer ul {
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 0 15px;
+}
+
+footer p {
+    position: relative;
+    top: 85px;
+    display: flex;
+    justify-content: center;
+    color: rgb(161, 134, 120);
+}
+
+.bottom-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    footer p {
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>びっくりドンキー</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/recommend.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <div id="back-top">
+        <img src="img/icons8-100.png" alt="">
+    </div>
+    <!--ヘッダー-->
+    <header>
+        <img id="headerImage" style="cursor: pointer;" src="img/header.png" alt="ヘッダーicon">
+        <nav>
+            <ul>
+                <li id="recommendLink">おすすめ</li>
+                <li id="menuLink">人気メニュー</li>
+                <li id="storeLink">店舗情報</li>
+                <li>キャンペーン</li>
+                <li>公式アプリ </li>
+            </ul>
+        </nav>
+        <!--ハンバーガメニューアイコン-->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+    </header>
+    <div id="menuOverlay">
+        <ul>
+            <li id="recommendLinkOverlay" class="li">
+                <table>
+                    <tr>
+                        <td style="font-size: 10px;">RECOMMEND</td>
+                    </tr>
+                    <tr>
+                        <td>おすすめ</td>
+                    </tr>
+                </table>
+            </li>
+            <li id="menuLinkOverlay" class="li">
+                <table>
+                    <tr>
+                        <td style="font-size: 10px;">POPULAR MENU</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            人気メニュー
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li id="storeLinkOverlay" class="li">
+                <table>
+                    <tr>
+                        <td style="font-size: 10px ;">STORE INFORMATION</td>
+                    </tr>
+                    <tr>
+                        <td>店舗情報</td>
+                    </tr>
+                </table>
+            </li>
+            <li class="li">
+                <table>
+                    <tr>
+                        <td style="font-size: 10px ;">CAMPAIGN</td>
+                    </tr>
+                    <tr>
+                        <td>キャンペーン</td>
+                    </tr>
+                </table>
+            </li>
+            <li class="li">
+                <table>
+                    <tr>
+                        <td style="font-size: 10px;">OFFICIAL APP</td>
+                    </tr>
+                    <tr>
+                        <td>公式アプリ</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <div class="menu-sns">
+            <ul>
+                <li id="twitter">
+                    <a href="https://twitter.com/bikkuri__donkey">
+                        <img src="img/sns/ico_header_sns_tw.svg" alt="">
+                    </a>
+                </li>
+                <li id="youtube">
+                    <a href="https://www.youtube.com/user/bikkuridonkey2008">
+                        <img src="img/sns/ico_header_sns_yt.svg" alt="">
+                    </a>
+                </li>
+                <li id="instagram">
+                    <a href="https://www.instagram.com/bikkuri__donkey/">
+                        <img src="img/sns/ico_header_sns_ig.svg" alt="">
+                    </a>
+                </li>
+                <li id="line">
+                    <a href="https://page.line.me/962dkexc?openQrModal=true">
+                        <img src="img/sns/ico_header_sns_ln.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-back">
+            <img src="img/menu-back.png" alt="">
+        </div>
+    </div>
+    <!--メイン-->
+    <main>
+        <!--びっくりドンキーの歴史-->
+        <div class="history-1">
+            <img id="historyImage" src="img/history/history-1.jpg" alt="">
+        </div>
+        <div class="history-2">
+            <p>「この一皿」の原点。<br>SINCE1968</p>
+        </div>
+        <div class="thought" id="thoughtSection">
+            <h1>
+                創業時から変わらぬ<br>
+                「お客様が喜ぶ顔が見たい」<br>
+                という想い。
+            </h1>
+            <img src="img/history/history_01.jpg" alt="">
+            <p>
+                1968年12月、岩手県盛岡市に誕生したハンバーガーとサラダの店「べる」。13坪の、
+                そのこぢんまりとしたお店には、「小さな店であることを恥じることはないよ。その小
+                さなあなたの店に人の心の美しさを一杯に満たそうよ」という言葉が掲げられていまし
+                た。この小さな店こそが、びっくりドンキーの原点です。
+            </p>
+        </div>
+        <!--おすすめ-->
+        <div id="recommendSection">
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="slide-inner">
+                        <img id="slide1" src="img/recommend/2024_morning_PC_top.jpg" alt="">
+                        <img id="slide2" src="img/recommend/2024_cheese_bn_PC.jpg" alt="">
+                        <img id="slide3" src="img/recommend/2024_CherryBeer_PC.jpg" alt="">
+                        <img id="slide4" src="img/recommend/2024_coffee_PC_TOP2.jpg" alt="">
+                        <!-- 最初の画像をクローンして最後に追加 -->
+                        <img id="slide1-clone" src="img/recommend/2024_morning_PC_top.jpg" alt="">
+                    </div>
+                    <h3 class="all-view">All View<span>+</span></h3>
+                </div>
+            </div>
+        </div>
+        <!--おすすめのAll Viewポップアップ-->
+        <div id="popup" class="popup">
+            <div class="popup-images">
+                <div class="item">
+                    <img id="popup-1" src="img/recommend/2024_morning_PC_top.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img id="popup-2" src="img/recommend/2024_0529_menchi_pre_PC.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img id="popup-3" src="img/recommend/2024_CherryBeer_PC.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img id="popup-4" src="img/recommend/2024_coffee_PC_TOP2.jpg" alt="">
+                </div>
+            </div>
+            <span class="close">閉じる&times;</span>
+        </div>
+        <!--おすすめの詳しい内容popup-->
+        <div id="popupContents" class="popup-contents-box">
+            <div class="popup-contents">
+                <img id="popupImage" src="">
+                <div class="contents-box">
+                    <h1 id="popupTitle"></h1>
+                    <p id="popupDescription"></p>
+                    <div class="popup-menu-box">
+                        <div class="item">
+                            <img id="popupMeenuImage1" src="" alt="">
+                            <h1 id="popupMenuTitle1">メニュー名</h1>
+                            <p id="popupMenuExplnation1"></p>
+                        </div>
+                        <div class="item">
+                            <img id="popupMeenuImage2" src="" alt="">
+                            <h1 id="popupMenuTitle2">メニュー名</h1>
+                            <p id="popupMenuExplnation2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="close-contents">閉じる&times;</span>
+        </div>
+        <!--商品メニュー-->
+        <div class="menu-bar" id="menuSection">
+            <img src="img/index_ttl_menu_pc.png" alt="">
+        </div>
+        <menu>
+            <div class="burger-box">
+                <div class="menu-title">
+                    <!--1250pxまではこれ表示-->
+                    <h1 id="changeTitle">レギュラーバーグディッシュ</h1>
+                </div>
+                <div class="burger">
+                    <img id="changePic" class="img" src="img/menu/1_RegularBurgDish.webp" alt="">
+                    <div>
+                        <!--1250px以下ではこっちのh1表示させたい-->
+                        <div class="menu-title-mini">
+                            <h1 id="changeTitleMini">レギュラーバーグディッシュ</h1>
+                        </div>
+                        <p id="burgerExplanation">
+                            創業初期からのロングセラー。
+                            和風ベースのオリジナルハンバーグソースは秘伝の味です。
+                            ハンバーグはドンキー独自の厳格な安全基準のもと、自然に近い環境で育てたビーフとポークの合挽肉を使用しています。
+                        </p>
+                        <div class="topping-box">
+                            <img src="img/menu/menu_option_egg.png" alt="">
+                            <img src="img/menu/menu_option_oroshiso.png" alt="">
+                            <img src="img/menu/menu_option_cheese.png" alt="">
+                            <img src="img/menu/menu_option_pain.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="burger-box">
+                <div class="menu-title side">
+                    <!--1250pxまではこれ表示-->
+                    <h1 id="changeSideTitle">びっくりフライドポテト</h1>
+                </div>
+                <div class="burger">
+                    <img id="changePicSide" class="img" src="img/menu/5112_frenchflys.webp" alt="">
+                    <div>
+                        <!--1250px以下ではこっちのh1表示させたい-->
+                        <div class="menu-title-mini side">
+                            <h1 id="changeSideTitleMini">びっくりフライドポテト</h1>
+                        </div>
+                        <p id="sideExplanation">
+                            あつあつ・ホクホクのフライドポテトは、
+                            びっくりドンキー定番のアラカルトメニュー。
+                            オリジナルマヨネーズタイプとトマトソースでどうぞ。
+                        </p>
+                        <div class="topping-box side">
+                            <img src="img/menu/35003_ika_hakobune.webp" alt="">
+                            <img src="img/menu/5130_FriedSquid.webp" alt="">
+                            <img src="img/menu/35032_BroccoliMayonnaiseGrill.webp" alt="">
+                            <img src="img/menu/5122_Margherita.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="burger-box">
+                <div class="menu-title salad">
+                    <!--1250pxまではこれ表示-->
+                    <h1 id="changeSaladTitle">マーメイドサラダ</h1>
+                </div>
+                <div class="burger">
+                    <img id="changePicSalad" class="img" src="img/menu/20005g_MermaidSalad.webp" alt="">
+                    <div>
+                        <div class="menu-title-mini salad">
+                            <h1 id="changeSaladTitleMini">マーメイドサラダ</h1>
+                        </div>
+                        <p id="saladExplanation">
+                            イカ唐揚げ、トマト、キュウリ、エビ、赤のりを使った彩り豊かなサラダ。多彩な具材を和風ドレッシングで。ケール入り。
+                        </p>
+                        <div class="topping-box salad">
+                            <img src="img/menu/20133g_CaesarSalad.webp" alt="">
+                            <img src="img/menu/20166g_DonkeyClassicSalad.webp" alt="">
+                            <img src="img/menu/20172g_BigDishSalad.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </menu>
+        <!--店舗情報-->
+        <div class="store-box" id="storeSection">
+            <div class="box">
+                <div class="fade store1">
+                    <img src="./img/store/store1.jpg" alt="">
+                    <div class="content">
+                        <h2>びっくりドンキー今福鶴見店</h2>
+                        <p>大阪府大阪市にあるこちらのお店は、大きな2本の煙突がシンボル🏭
+                            無骨なパイプや錆びたブリキは、昔の工場のような雰囲気を表現しています🔧<br>
+                            インダストリアルな内装の中には床に鯉の絵が𓆝
+                            お近くの方はぜひお立ち寄りください✨</p>
+                    </div>
+                </div>
+                <div class="fade store2">
+                    <img src="./img/store/store2.jpg" alt="">
+                    <div class="content">
+                        <h2>びっくりドンキー上新庄店</h2>
+                        <p>大阪市東淀川区の上新庄店は「廃墟化したジャンク・ヤード」がコンセプト✨ブリキを使ったレトロな外観が、独特な雰囲気を醸し出しています😊<br>
+                            店内には、乗り物の車内のようなお席も🛺🚙🚗
+                            ぜひお店の装飾も楽しんでみてください♪</p>
+                    </div>
+                </div>
+
+                <div class="fade store3">
+                    <img src="./img/store/store3.jpg" alt="">
+                    <div class="content">
+                        <h2>びっくりドンキーアメリカ村店</h2>
+                        <p>大阪の人気スポット"アメリカ村"にも店舗があるんです😊<br>
+                            1970～80年代のアメリカンテイストなディスプレイが店内をにぎやかに彩ります♪
+                            入り口のトラクターも必見です🚙👀</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--キャンペーン-->
+        <div class="campaign-box">
+
+        </div>
+
+        <!--公式アカウント-->
+        <div class="official-box">
+
+        </div>
+        <!--SNS-->
+        <div class="sns-follow-box">
+            <img class="follow-img" src="img/index_ttl_followus_pc.png" alt="">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/bikkuri__donkey">
+                        <img src="img/sns/index_ico_sns_tw.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/bikkuridonkey2008">
+                        <img src="img/sns/index_ico_sns_yt.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/bikkuri__donkey/">
+                        <img src="img/sns/index_ico_sns_ig.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://page.line.me/962dkexc?openQrModal=true">
+                        <img src="img/sns/index_ico_sns_ln.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--フッター-->
+    <footer>
+        <img class="bottom-img" src="img/footer.png" alt="">
+
+        <ul>
+            <li>
+                <a href="https://twitter.com/bikkuri__donkey">
+                    <img src="img/sns/ico_sns_tw_w.svg">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/user/bikkuridonkey2008">
+                    <img src="img/sns/ico_sns_yt_w.svg">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/bikkuri__donkey/">
+                    <img src="img/sns/ico_sns_ig_w.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://page.line.me/962dkexc?openQrModal=true">
+                    <img id="footerImage" src="img/sns/ico_sns_ln_w.svg" alt="">
+                </a>
+            </li>
+        </ul>
+        <p>Copyright bikkuri-donkey All rights reserved.</p>
+    </footer>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/history.js"></script>
+    <script src="javascript/recommend.js"></script>
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/store.js"></script>
+</body>
+
+</html>
